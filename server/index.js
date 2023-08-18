@@ -20,10 +20,9 @@ app.use(function (req, res, next) {
   )
   next()
 });
-mongoose.connect(`mongodb+srv://hamodyadl52:mhmdadl52@cluster0.bj4sx.mongodb.net/test`, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}).then(() => {
+
+  mongoose.connect("mongodb+srv://hamodyadl52:mhmd52@cluster0.bj4sx.mongodb.net/onlineStore", {useNewUrlParser: true, useUnifiedTopology: true})
+.then(() => {
   console.log("Successfully connect to MongoDB");
   initial()
 })
